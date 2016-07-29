@@ -1,5 +1,7 @@
 
 Parse.Cloud.define('hello', function (req, res) {
+  console.log('Log')
+  console.error('Error')
   res.success('Hi');
 });
 Parse.Cloud.define("sendPush", function (request, response) {
